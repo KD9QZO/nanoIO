@@ -1,3 +1,8 @@
+﻿/*Begining of Auto generated code by Atmel studio */
+#include <Arduino.h>
+
+/*End of auto generated code by Atmel studio */
+
 /***********************************************************************
 
   nanoIO
@@ -39,6 +44,29 @@
 #include "ascii_map.h"
 
 #include "config.h"
+//Beginning of Auto generated function prototypes by Atmel Studio
+void do_serial();
+void handleConfigurationCommand(byte b);
+void eeLoad();
+void eeSave();
+void initTimer();
+void timerISR();
+void displayConfigurationPrompt();
+void displayConfiguration();
+void send_next_CW_char();
+void processHalfBit();
+void resetChar();
+void resetSendBuffer();
+void addToSendBuffer(byte newByte);
+byte getNextSendChar();
+boolean requiresLetters(byte asciiByte);
+boolean requiresFigures(byte asciiByte);
+void setPTT(byte b);
+void enable_tune();
+void echo(byte b);
+//End of Auto generated function prototypes by Atmel Studio
+
+
 
 /******************************************************
      Variable declarations
